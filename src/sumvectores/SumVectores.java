@@ -33,12 +33,11 @@ public class SumVectores {
                 
     }
     public static int vector(int A[], int num){
-        if (num==0){
-            return A[num];
-            
-        }else{
-            return A[num]+vector(A, num-1);
+        int resultado = 0, j;
+        for (j = 0; j <= num; j++){
+            resultado += A[j];
         }
+        return resultado;
     }
     
     
